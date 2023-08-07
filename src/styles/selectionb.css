@@ -1,0 +1,51 @@
+#secondarySelection {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  padding: 1rem 2rem;
+  top: 12rem;
+  border-right: 2px var(--gold) solid;
+}
+
+#priceRange {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 2rem;
+}
+
+#star {
+  margin: 0 3px;
+}
+
+#star:hover {
+  fill: var(--gold);
+}
+
+#p1:checked ~ #lowPrice {
+  color: var(--gold) !important;
+}
+
+#p2:checked ~ #medPrice {
+  color: var(--gold) !important;
+}
+
+#p3:checked ~ #highPrice {
+  color: var(--gold) !important;
+}
+
+#stars .star {
+  margin: 0 2px;
+}
+
+#stars input {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  #secondarySelection {
+    display: none;
+  }
+}

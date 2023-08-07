@@ -1,0 +1,25 @@
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  width: 100%;
+  padding: 1rem 10%;
+}
+
+#guestCount {
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  form {
+    grid-template-columns: 100%;
+  }
+
+  #dates {
+    margin: 1rem 0;
+  }
+}

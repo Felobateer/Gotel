@@ -1,0 +1,55 @@
+footer {
+  position: relative;
+  background-color: var(--gold);
+  height: 20rem;
+  width: 120%;
+  align-self: center;
+  margin-top: 5rem;
+  padding: 5rem 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#footerCol {
+  background: transparent;
+}
+
+#footerCol p,
+h1,
+span,
+div {
+  background: transparent;
+}
+
+#footerCol input {
+  background-color: white;
+  border: none;
+  height: 2.4rem;
+  border-radius: 0.5rem;
+}
+
+#socialMedia {
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+  footer {
+    height: 12rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 10%;
+  }
+
+  #footerCol h1 {
+    font-size: 1.7rem;
+  }
+
+  #footerCol p {
+    font-size: 0.9rem;
+  }
+
+  #footerCol:last-of-type {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  --background: #192537;
+  --gold: #b09e80;
+}
+
+#root {
+  max-width: 1950px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,322 @@
+[
+  {
+    "name": "Hollywood Media Hotel on Kurfuerstendamm",
+    "price": 164,
+    "city": "berlin",
+    "rating": 4,
+    "id": "B1",
+    "img": "../../public/B1.jpg"
+  },
+  {
+    "name": "Motel One Berlin AlexanderPlatz",
+    "price": 146,
+    "city": "berlin",
+    "rating": 5,
+    "id": "B2",
+    "img": "../../public/B2.jpg"
+  },
+  {
+    "name": "Yggotel Ravn",
+    "price": 158,
+    "city": "berlin",
+    "rating": 3,
+    "id": "B3",
+    "img": "../../public/B3.jpg"
+  },
+  {
+    "name": "Select Hotel Berlin Spiegelturm",
+    "price": 86,
+    "city": "berlin",
+    "rating": 4,
+    "id": "B4",
+    "img": "../../public/B4.jpg"
+  },
+  {
+    "name": "Mercure Hotel Berlin Mitte",
+    "price": 162,
+    "city": "berlin",
+    "rating": 2,
+    "id": "B5",
+    "img": "../../public/B5.jpg"
+  },
+  {
+    "name": "Sheraton Berlin Grand Hotel Esplanade",
+    "price": 198,
+    "city": "berlin",
+    "rating": 5,
+    "id": "B6",
+    "img": "../../public/B6.jpg"
+  },
+  {
+    "name": "Intercity Hotel Berlin Ostbahnhof",
+    "price": 95,
+    "city": "berlin",
+    "rating": 3,
+    "id": "B7",
+    "img": "../../public/B7.jpg"
+  },
+  {
+    "name": "relexa hotel Munich",
+    "price": 159,
+    "city": "munich",
+    "rating": 4,
+    "id": "B8",
+    "img": "../../public/M1.jpg"
+  },
+  {
+    "name": "Hotel Blutenburg",
+    "price": 82,
+    "city": "munich",
+    "rating": 3,
+    "id": "M9",
+    "img": "../../public/M2.jpg"
+  },
+  {
+    "name": "Hotel Am Moosfeld",
+    "price": 90,
+    "city": "munich",
+    "rating": 4,
+    "id": "M10",
+    "img": "../../public/M3.jpg"
+  },
+  {
+    "name": "Ruby Lilly Hotel Munich",
+    "price": 183,
+    "city": "munich",
+    "rating": 4,
+    "id": "M11",
+    "img": "../../public/M4.jpg"
+  },
+  {
+    "name": "Rilano 24/7 Hotel Munich",
+    "price": 49,
+    "city": "munich",
+    "rating": 3,
+    "id": "M12",
+    "img": "../../public/M5.jpg"
+  },
+  {
+    "name": "Boutique Hotel Germania",
+    "price": 120,
+    "city": "munich",
+    "rating": 4,
+    "id": "M13",
+    "img": "../../public/M6.jpg"
+  },
+  {
+    "name": "THE FLAG Meiller Gardens",
+    "price": 78,
+    "city": "munich",
+    "rating": 3,
+    "id": "M14",
+    "img": "../../public/M7.jpg"
+  },
+  {
+    "name": "Eden Hotel Wolff",
+    "price": 169,
+    "city": "munich",
+    "rating": 5,
+    "id": "M15",
+    "img": "../../public/M8.jpg"
+  },
+  {
+    "name": "Hilton Garden Inn Munich City West",
+    "price": 125,
+    "city": "munich",
+    "rating": 4,
+    "id": "M16",
+    "img": "../../public/M9.jpg"
+  },
+  {
+    "name": "PLAZA Premium Munich",
+    "price": 122,
+    "city": "munich",
+    "rating": 5,
+    "id": "M17",
+    "img": "../../public/M10.jpg"
+  },
+  {
+    "name": "AWA Hotel",
+    "price": 166,
+    "city": "munich",
+    "rating": 4,
+    "id": "M18",
+    "img": "../../public/M11.jpg"
+  },
+  {
+    "name": "The Rilano Hotel Hamburg",
+    "price": 117,
+    "city": "hamburg",
+    "rating": 4,
+    "id": "M19",
+    "img": "../../public/H1.jpg"
+  },
+  {
+    "name": "Super 8 by Wyndham Hamburg Mitte",
+    "price": 129,
+    "city": "hamburg",
+    "rating": 3,
+    "id": "M20",
+    "img": "../../public/H2.jpg"
+  },
+  {
+    "name": "ibis Styles Hamburg Barmbek",
+    "price": 143,
+    "city": "hamburg",
+    "rating": 5,
+    "id": "M21",
+    "img": "../../public/H3.jpg"
+  },
+  {
+    "name": "Dorint Hotel Hamburg-Eppendorf",
+    "price": 117,
+    "city": "hamburg",
+    "rating": 4,
+    "id": "M22",
+    "img": "../../public/H4.jpg"
+  },
+  {
+    "name": "Generator Hamburg",
+    "price": 30,
+    "city": "hamburg",
+    "rating": 3,
+    "id": "M23",
+    "img": "../../public/H5.jpg"
+  },
+  {
+    "name": "GRAND ELYSEE Hamburg",
+    "price": 200,
+    "city": "hamburg",
+    "rating": 5,
+    "id": "M24",
+    "img": "../../public/H6.jpg"
+  },
+  {
+    "name": "Hotel Domicil Hamburg by Golden Tulip",
+    "price": 148,
+    "city": "hamburg",
+    "rating": 3,
+    "id": "M25",
+    "img": "../../public/H7.jpg"
+  },
+  {
+    "name": "ARCOTEL Onyx Hamburg",
+    "price": 198,
+    "city": "hamburg",
+    "rating": 4,
+    "id": "M26",
+    "img": "../../public/H8.jpg"
+  },
+  {
+    "name": "Greet hotel Darmstadt - to Accor hotel -",
+    "price": 75,
+    "city": "darmstadt",
+    "rating": 3,
+    "id": "M27",
+    "img": "../../public/D1.jpg"
+  },
+  {
+    "name": "Intercity Hotel Darmstadt",
+    "price": 81,
+    "city": "darmstadt",
+    "rating": 4,
+    "id": "M28",
+    "img": "../../public/D2.jpg"
+  },
+  {
+    "name": "Aspire Victory",
+    "price": 81,
+    "city": "darmstadt",
+    "rating": 3,
+    "id": "M29",
+    "img": "../../public/D3.jpg"
+  },
+  {
+    "name": "Holiday Inn Express - Darmstadt, at IHG Hotel",
+    "price": 118,
+    "city": "darmstadt",
+    "rating": 3,
+    "id": "M30",
+    "img": "../../public/D4.jpg"
+  },
+  {
+    "name": "Best Western Hotel Darmstadt Mitte",
+    "price": 124,
+    "city": "darmstadt",
+    "rating": 4,
+    "id": "M31",
+    "img": "../../public/D5.jpg"
+  },
+  {
+    "name": "limehome Darmstadt Wilhelminestrasse - Digital Access",
+    "price": 119,
+    "city": "darmstadt",
+    "rating": 3,
+    "id": "M32",
+    "img": "../../public/D6.jpg"
+  },
+  {
+    "name": "Maritime Hotel Darmstadt",
+    "price": 96,
+    "city": "darmstadt",
+    "rating": 5,
+    "id": "M33",
+    "img": "../../public/D7.jpg"
+  },
+  {
+    "name": "B&B Hotel Darmstadt",
+    "price": 91,
+    "city": "darmstadt",
+    "rating": 2,
+    "id": "M34",
+    "img": "../../public/D8.jpg"
+  },
+  {
+    "name": "Moxy Darmstadt",
+    "price": 134,
+    "city": "darmstadt",
+    "rating": 3,
+    "id": "M35",
+    "img": "../../public/D9.jpg"
+  },
+  {
+    "name": "DORMERO Hotel Darmstadt",
+    "price": 91,
+    "city": "darmstadt",
+    "rating": 5,
+    "id": "M36",
+    "img": "../../public/D10.jpg"
+  },
+  {
+    "name": "Easy Living Darmstadt",
+    "price": 48,
+    "city": "darmstadt",
+    "rating": 2,
+    "id": "M37",
+    "img": "../../public/D11.jpg"
+  },
+  {
+    "name": "Hotel Waldfriede",
+    "price": 92,
+    "city": "darmstadt",
+    "rating": 4,
+    "id": "M38",
+    "img": "../../public/D12.jpg"
+  },
+  {
+    "name": "Hotel Arheilgerhof",
+    "price": 68,
+    "city": "darmstadt",
+    "rating": 3,
+    "id": "M39",
+    "img": "../../public/D13.jpg"
+  },
+  {
+    "name": "Hotel Reuterhof",
+    "price": 75,
+    "city": "darmstadt",
+    "rating": 3,
+    "id": "M40",
+    "img": "../../public/D14.jpg"
+  }
+]
