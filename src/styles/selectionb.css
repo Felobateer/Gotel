@@ -1,12 +1,10 @@
 #secondarySelection {
-  position: fixed;
+  background: none;
   display: flex;
-  flex-direction: column;
-  width: 20%;
-  height: 100%;
-  padding: 1rem 2rem;
-  top: 12rem;
-  border-right: 2px var(--gold) solid;
+  flex-direction: row;
+  justify-content: space-evenly;
+  transition: position 0.5s ease;
+  width: 100%;
 }
 
 #priceRange {

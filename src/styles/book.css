@@ -1,1 +1,13 @@
+.mainSelectionBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: normal;
+  margin: 15px;
+}
 
+#moreFilterbtn {
+  height: 40px;
+  margin: auto;
+  /* margin-right: auto; */
+}

@@ -1,31 +1,31 @@
 #hotelsGrid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
   float: right;
 }
 
 #results {
   width: 15rem;
   height: 23rem;
+  padding: 15px;
+  background-color: #0c111a;
+  border-radius: 15px;
 }
 
 #results p {
   font-size: 1rem;
   margin: 0 1rem;
   text-align: start;
+  background: none;
 }
 
 #empty {
   height: 40rem;
   width: 60%;
   margin: 0 auto;
-}
-
-@media (max-width: 1700px) {
-  #hotelsGrid {
-    width: 80%;
-  }
 }
 
 @media (max-width: 1250px) {

@@ -21,21 +21,7 @@ function HomePageb() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis,
           quod sequi mollitia accusantium numquam eos similique ea voluptates
           magnam. Quis omnis eligendi voluptatem beatae totam molestias illum
-          fuga eaque aperiam. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Corrupti iusto et explicabo facere consectetur
-          tempore, amet iste molestias consequuntur, nobis soluta illum ullam at
-          a cum doloribus esse nemo temporibus. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Porro ullam ut saepe maiores ipsam, sed
-          a magni laborum dolorum tenetur!
-        </p>
-        <p className="bg-transparent fs-6 ">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-          tempore omnis iure laboriosam voluptatum deserunt quisquam porro nisi
-          earum, mollitia quas optio. Veritatis blanditiis similique quas
-          tenetur ullam amet ut! Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Cum mollitia sunt nobis eius doloribus voluptatum
-          fugit reprehenderit molestiae nostrum maiores accusamus ipsum eaque
-          qui, harum corporis, itaque sequi quam provident!
+          fuga eaque aperiam.
         </p>
       </div>
       <div id="aboutImg">

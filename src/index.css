@@ -11,4 +11,12 @@ html {
 body {
   background-color: #192537;
   overflow-x: hidden;
+  max-width: 1440px;
+}
+
+@media (min-width: 1440px) {
+  html {
+    display: flex;
+    justify-content: center;
+  }
 }

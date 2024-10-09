@@ -1,13 +1,21 @@
 #cityCards {
   margin: 0 auto;
-  padding: 0 2rem;
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 #cityCard {
   width: fit-content;
+  padding: 15px;
+  background-color: #0c111a;
+  border-radius: 15px;
+}
+
+#cityCard p {
+  background: none;
 }
 
 #cityCard #button {
