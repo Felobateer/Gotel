@@ -13,3 +13,4 @@ python-dotenv==1.0.1
 gunicorn==23.0.0
 whitenoise==6.7.0
 PyJWT==2.9.0
+pydantic==2.9.2
