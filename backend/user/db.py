@@ -4,7 +4,7 @@ from django.contrib.auth.hashers import make_password, check_password
 from django.conf import settings
 import redis
 from decouple import config
-
+ 
 
 redis_pool = redis.ConnectionPool(
     host=config('REDIS_HOST', default='localhost'),

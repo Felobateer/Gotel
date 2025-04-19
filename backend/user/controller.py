@@ -1,4 +1,3 @@
-# user_service.py
 from typing import Tuple, Union, List
 from pydantic import ValidationError
 from rest_framework import status
