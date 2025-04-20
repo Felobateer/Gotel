@@ -1,6 +1,9 @@
 body {
+  position: relative;
   display: flex;
-  place-items: center;
+  /* place-items: center !important; */
+  justify-content: center !important;
+  padding:  20px;
   min-width: 320px;
   max-width: 1440px;
   min-height: 100vh;

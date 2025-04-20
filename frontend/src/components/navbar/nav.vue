@@ -9,19 +9,24 @@ import navModal from './navModal.vue'
         <div>
             <img  src="../../assets/Gotel-logo-fedbbdcb.jpg" alt="Gotel" class="logo"/>
         </div>
-        <NavModal></NavModal>   
+        <NavModal></NavModal>
     </nav>
 </template>
 
 <style scoped>
     nav {
-        position: fixed;
-        top: 0;
+        /* position: fixed;
+        top: 0; */
+        position: relative;
+        margin: auto;
+        width: 90% !important;
+        padding: 2rem 2rem 0 2rem !important;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
         background: transparent;
+        border-bottom: 1px solid #b09e80;
+        overflow-x: hidden;
     }
 
     .logo {
