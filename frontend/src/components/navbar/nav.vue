@@ -23,7 +23,7 @@ const links = [
 
     .navbar {
         width: 100%;
-        padding: 2rem 2rem 0 2rem !important;
+        padding: 0 2rem !important;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

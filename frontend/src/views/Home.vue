@@ -1,11 +1,13 @@
 <script setup>
-import Nav from '../components/navbar/nav.vue'
 import Hero from '../components/hero/hero.vue'
+import About from '../components/about/about.vue'
+import Cities from '../components/cities/cities.vue' 
 </script>
 
 <template>
-  <Nav></Nav>
   <Hero></Hero>
+  <About></About>
+  <Cities></Cities>
 </template>
 
 <style scoped>
