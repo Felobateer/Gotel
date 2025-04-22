@@ -7,11 +7,26 @@ body {
   min-width: 320px;
   max-width: 1440px;
   min-height: 100vh;
-  background-color: #192537 !important;
+  background-color: var(--dark) !important;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-  color: whitesmoke;
+  color: var(--light);
+}
+
+
+:root {
+  --gold: #b09e80;
+  --dark: #192537;
+  --light: #f2f2f2;
+  --font-a: 'Inter', sans-serif;
+  --font-b: 'Roboto', sans-serif;
+  --font-c: 'Poppins', sans-serif;
 }

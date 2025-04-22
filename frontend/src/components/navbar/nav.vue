@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import navModal from './navModal.vue'
 // import logo from '@/assets/Gotel-logo-fedbbdcb.jpg'
 const links = [
@@ -10,27 +10,25 @@ const links = [
 </script>
 
 <template>
-    <nav class="w-100">
+    <nav class="navbar">
         <div>
             <img  src="../../assets/Gotel-logo-fedbbdcb.jpg" alt="Gotel" class="logo"/>
         </div>
-        <NavModal></NavModal>
+        <navModal :links="links"></navModal>
     </nav>
 </template>
 
 <style scoped>
-    nav {
-        /* position: fixed;
-        top: 0; */
-        position: relative;
-        margin: auto;
-        width: 90% !important;
+    @import '../../style.css';
+
+    .navbar {
+        width: 100%;
         padding: 2rem 2rem 0 2rem !important;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         background: transparent;
-        border-bottom: 1px solid #b09e80;
+        border-bottom: 1px solid var(--gold);
         overflow-x: hidden;
     }
 
