@@ -2,7 +2,9 @@
 </script>
 
 <template>
-    <div class="input"></div>
+    <div class="inputContainer">
+        <input type="text" />
+    </div>
 </template>
 
 <style scoped>
