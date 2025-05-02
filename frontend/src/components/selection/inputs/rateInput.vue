@@ -2,7 +2,8 @@
 </script>
 
 <template>
-    <div class="inputContainer">
+<!-- this is the rate input -->
+<div class="inputContainer">
         <input type="text" />
     </div>
 </template>
