@@ -16,7 +16,7 @@ const imageUrl = computed(() =>
 <template>
   <div id="cityCard">
     <img :src="imageUrl" id="cityImg" alt="City Image" />
-    <p class="text-white text-start py-0 px-3 lh-1">{{ popular.city }}</p>
+    <p class="text-white text-start py-0 px-3 lh-2 font-semibold">{{ popular.city }}</p>
     <p class="text-white text-start py-0 px-3 lh-1">{{ popular.hotels }} Hotels</p>
     <p class="text-white text-start py-0 px-3 lh-1">On average € {{ popular.average }}</p>
   </div>
@@ -26,9 +26,14 @@ const imageUrl = computed(() =>
     #cityCard {
   width: fit-content;
   padding: 15px;
-  background-color: #0c111a;
+  background-color: #1c2b41;
   border-radius: 15px;
 }
+
+  .font-semibold {
+    font-weight: 700;
+    font-size: 20px;
+  }
 
 #cityCard p {
   background: none;

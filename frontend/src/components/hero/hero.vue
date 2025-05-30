@@ -1,6 +1,26 @@
 <script setup>
 import * as bootstrap from 'bootstrap'
+import { onMounted, onBeforeUnmount } from 'vue'
 
+let carouselInstance = null
+
+onMounted(() => {
+  const carouselEl = document.getElementById('carouselExample')
+  if (carouselEl) {
+    carouselInstance = new bootstrap.Carousel(carouselEl, {
+      interval: 3000,
+      ride: 'carousel',
+      pause: false
+    })
+  }
+})
+
+onBeforeUnmount(() => {
+  if (carouselInstance) {
+    carouselInstance.dispose()
+    carouselInstance = null
+  }
+})
 </script>
 
 <template>
@@ -57,6 +77,8 @@ import * as bootstrap from 'bootstrap'
         width: 100%;
         height: 680px;
         border-radius: 0 0 3rem 3rem;
+        image-rendering: optimizeSpeed;
+        object-fit: cover;
     }
 
     .shade {

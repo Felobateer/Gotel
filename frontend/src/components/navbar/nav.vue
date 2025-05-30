@@ -3,9 +3,9 @@ import navModal from './navModal.vue'
 // import logo from '@/assets/Gotel-logo-fedbbdcb.jpg'
 const links = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Contact', path: '/contact' },
+    // { name: 'About', path: '/about' },
+    // { name: 'Services', path: '/services' },
+    // { name: 'Contact', path: '/contact' },
 ]
 </script>
 

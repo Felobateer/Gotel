@@ -31,20 +31,25 @@
 </template>
 
 <style scoped>
-    footer {
+  footer {
   position: relative;
   background-color: var(--gold);
   height: 20rem;
-  width: 120%;
+  width: 100%;
   align-self: center;
   margin-top: 5rem;
   padding: 5rem 10%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #footerCol {
   background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
 }
 
 #footerCol p,
@@ -52,6 +57,7 @@ h1,
 span,
 div {
   background: transparent;
+  color: rgb(20, 20, 20);
 }
 
 #footerCol input {
