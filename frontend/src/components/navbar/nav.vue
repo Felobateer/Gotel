@@ -12,7 +12,7 @@ const links = [
 <template>
     <nav class="navbar">
         <div>
-            <img  src="../../assets/Gotel-logo-fedbbdcb.jpg" alt="Gotel" class="logo"/>
+            <img  src="/Gotel-logo-fedbbdcb.jpg" alt="Gotel" class="logo"/>
         </div>
         <navModal :links="links"></navModal>
     </nav>

@@ -5,28 +5,28 @@
         "city": "Berlin",
         "hotels": 7,
         "average": 154,
-        "img": "../../assets/Berlin.jpg"
+        "img": "/Berlin.jpg"
     },
       {
         "id": 1,
         "city": "Munich",
         "hotels": 11,
         "average": 168,
-        "img": "../../assets/Munich.jpg"
+        "img": "/Munich.jpg"
       },
       {
         "id": 2,
         "city": "Hamburg",
         "hotels": 8,
         "average": 146,
-        "img": "../../assets/Hamburg.jpg"
+        "img": "/Hamburg.jpg"
       },
       {
         "id": 3,
         "city": "Darmstadt",
         "hotels": 14,
         "average": 149,
-        "img": "../../assets/Darmstadt.jpg"
+        "img": "/Darmstadt.jpg"
       }
    ] 
 }

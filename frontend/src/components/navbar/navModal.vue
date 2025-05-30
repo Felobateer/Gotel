@@ -22,7 +22,7 @@ defineProps({
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasRightLabel">
-            <img  src="../../assets/Gotel-logo-fedbbdcb.jpg" alt="Gotel" class="logo"/>
+            <img  src="/Gotel-logo-fedbbdcb.jpg" alt="Gotel" class="logo"/>
         </h5>
       </div>
       <div class="offcanvas-body">

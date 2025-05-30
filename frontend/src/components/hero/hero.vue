@@ -27,7 +27,7 @@ onBeforeUnmount(() => {
     <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../../assets/plan-6c53a4b6.jpg" class="d-block w-100" alt="...">
+      <img src="/plan-6c53a4b6.jpg" class="d-block w-100" alt="...">
       <div class="shade">
         <h1 class="text-white fs-1 bg-transparent">Gotel</h1>
         <p class="text-white fs-3">Book your hotel in one minute</p>
@@ -37,13 +37,13 @@ onBeforeUnmount(() => {
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../../assets/enjoy-b782185f.jpg" class="d-block w-100" alt="...">
+      <img src="/enjoy-b782185f.jpg" class="d-block w-100" alt="...">
       <div class="shade">
         <p class="text-white fs-3">choose your destination</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../../assets/comfort-b681e3ce.jpg" class="d-block w-100" alt="...">
+      <img src="/comfort-b681e3ce.jpg" class="d-block w-100" alt="...">
       <div class="shade">
         <p class="text-white fs-3">Enjoy your trip with us</p>
       </div>

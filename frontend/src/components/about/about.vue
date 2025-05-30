@@ -23,7 +23,7 @@
         </p>
       </div>
       <div id="aboutImg">
-        <img src='../../assets/tourist.jpg' alt="tourist" />
+        <img src='/tourist.jpg' alt="tourist" />
       </div>
     </article>
 </template>
