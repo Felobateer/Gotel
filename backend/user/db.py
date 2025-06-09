@@ -1,11 +1,11 @@
 import os
-from django.db import models
-from django.contrib.auth.hashers import make_password, check_password
-from django.conf import settings
 import redis
 from decouple import config
- 
+from pymongo import MongoClient, ASCENDING
+from datetime import datetime
+from werkzeug.security import generate_password_hash, check_password_hash
 
+# Redis setup
 redis_pool = redis.ConnectionPool(
     host=config('REDIS_HOST', default='localhost'),
     port=config('REDIS_PORT', default=6379, cast=int),
@@ -13,27 +13,59 @@ redis_pool = redis.ConnectionPool(
     decode_responses=True,
 )
 redis_client = redis.Redis(connection_pool=redis_pool)
+REDIS_PREFIX = config('REDIS_PREFIX', default='gotel')
 
-class User(models.Model):
-    user_id = models.CharField(max_length=255, unique=True)
-    name = models.CharField(max_length=255)
-    email = models.EmailField(max_length=255, unique=True)
-    password = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True)
+# MongoDB setup
+mongo_client = MongoClient(
+    host=config('MONGO_HOST', default='localhost'),
+    port=config('MONGO_PORT', default=27017, cast=int),
+    username=config('MONGO_USER', default=None),
+    password=config('MONGO_PASSWORD', default=None)
+)
+db = mongo_client[config('MONGO_DB', default='gotel_db')]
+users_collection = db['users']
+users_collection.create_index([('user_id', ASCENDING)], unique=True)
+users_collection.create_index([('email', ASCENDING)], unique=True)
 
-    class Meta:
-        db_table = 'users'
-    
+class User:
+    def __init__(self, user_id, name, email, password, created_at=None):
+        self.user_id = user_id
+        self.name = name
+        self.email = email
+        self.password = password
+        self.created_at = created_at or datetime.utcnow()
+
+    @staticmethod
+    def from_dict(data):
+        return User(
+            user_id=data['user_id'],
+            name=data['name'],
+            email=data['email'],
+            password=data['password'],
+            created_at=data.get('created_at', datetime.utcnow())
+        )
+
     def set_password(self, raw_password):
-        """Hash and set the user's password."""
-        self.password = make_password(raw_password)
-    
+        self.password = generate_password_hash(raw_password)
+
     def check_password(self, raw_password):
-        """Verify the user's password."""
-        return check_password(raw_password, self.password)
-    
+        return check_password_hash(self.password, raw_password)
+
+    def save_to_mongo(self):
+        user_data = {
+            'user_id': self.user_id,
+            'name': self.name,
+            'email': self.email,
+            'password': self.password,
+            'created_at': self.created_at
+        }
+        users_collection.update_one(
+            {'user_id': self.user_id},
+            {'$set': user_data},
+            upsert=True
+        )
+
     def save_to_redis(self):
-        """Save user data to Redis as a hash."""
         user_data = {
             'user_id': self.user_id,
             'name': self.name,
@@ -41,23 +73,23 @@ class User(models.Model):
             'created_at': self.created_at.isoformat()
         }
         try:
-            redis_client.hset(f"{settings.REDIS_PREFIX}:user:{self.user_id}", mapping=user_data)
+            redis_client.hset(f"{REDIS_PREFIX}:user:{self.user_id}", mapping=user_data)
         except redis.RedisError:
             pass
+
+    def delete_from_mongo(self):
+        users_collection.delete_one({'user_id': self.user_id})
 
     def delete_from_redis(self):
-        """Delete user data from Redis."""
         try:
-            redis_client.delete(f"{settings.REDIS_PREFIX}:user:{self.user_id}")
+            redis_client.delete(f"{REDIS_PREFIX}:user:{self.user_id}")
         except redis.RedisError:
             pass
-    
-    def save(self, *args, **kwargs):
-        """Override save method to save user data to Redis."""
-        super().save(*args, **kwargs)
+
+    def save(self):
+        self.save_to_mongo()
         self.save_to_redis()
 
-    def delete(self, *args, **kwargs):
-        """Override delete method to remove user data from Redis."""
+    def delete(self):
+        self.delete_from_mongo()
         self.delete_from_redis()
-        super().delete(*args, **kwargs)
