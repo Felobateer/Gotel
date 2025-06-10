@@ -38,7 +38,7 @@ def test_update_hotel(authenticated_client, test_user):
     assert response.json['message'] == 'Hotel updated successfully'
 
 def test_get_hotel(authenticated_client, test_user):
-    response = authenticated_client.get('/api/hotel/2')
+    response = authenticated_client.get('/api/hotel/get/2')
     print(f"Get Hotel Response: {response.status_code} - {response.data.decode()}")
     assert response.status_code == 200
     assert response.json['hotel_id'] == 2

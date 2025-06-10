@@ -13,6 +13,10 @@ class VerifyTokenMiddleware:
         self.public_endpoints = [
             '/api/signup/',
             '/api/login/',
+            '/api/get-user/',
+            '/api/get-all-users/',
+            '/api/update-user/',
+            '/api/delete-user/',
             '/api/reset-password/',
             '/api/verify-reset-token/',
             '/api/update-password-with-token/',

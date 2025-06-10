@@ -54,7 +54,7 @@ def test_user(tinydb):
 
 @pytest.fixture
 def authenticated_client(client, test_user):
-    client.post('/login/', {
+    client.post('/api/user/login/', {
         'email': 'test@example.com',
         'password': 'testpassword'
     })
