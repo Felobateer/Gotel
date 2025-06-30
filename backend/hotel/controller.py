@@ -154,3 +154,31 @@ def list_hotels() -> Tuple[List[HotelResponse], int]:
 
     except Exception as e:
         return {"error": f"Failed to retrieve hotels: {str(e)}"}, status.HTTP_500_INTERNAL_SERVER_ERROR
+
+def rate_hotel(hotel_id: str, new_rating: float) -> Tuple[Union[HotelResponse, dict], int]: 
+    try:
+        hotel = Hotel.objects.filter(hotel_id=hotel_id).first() 
+        if not hotel:
+            return {"error": "Hotel not found"}, status.HTTP_404_NOT_FOUND
+        
+        hotel.rating = new_rating
+        hotel.save()
+
+        hotel_response = HotelResponse(
+            hotel_id=hotel.hotel_id,
+            name=hotel.name,
+            address=hotel.address,
+            city=hotel.city,
+            email=hotel.email,
+            website=hotel.website,
+            img=hotel.img.url if hotel.img else None,
+            created_at=hotel.created_at.isoformat(),
+            updated_at=hotel.updated_at.isoformat(),
+            description=hotel.description,
+            price=str(hotel.price),
+            rating=new_rating
+        )
+
+        return hotel_response.dict(), status.HTTP_200_OK
+    except Exception as e:
+        return {"error": f"Failed to update Hotel rating: {str(e)}"}, status.HTTP_500_INTERNAL_SERVER_ERROR
