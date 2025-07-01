@@ -2,3 +2,7 @@ django
 djangorestframework
 environs
 pillow
+mysqlclient
+dj-database-url
+django-cors-headers
+python-decouple

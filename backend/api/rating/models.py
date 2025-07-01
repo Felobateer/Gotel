@@ -1,4 +1,6 @@
 from django.db import models
+from hotel.models import Hotel
+from user.models import User
 
 # Create your models here.
 class Rating(models.Model):
